@@ -1,0 +1,44 @@
+# ── Build outputs ─────────────────────────────────────────────────────────────
+3ds_source/build/
+3ds_source/*.elf
+3ds_source/*.3dsx
+3ds_source/*.cia
+3ds_source/*.smdh
+3ds_source/*.3ds
+
+# ── Backup files (editor and manual) ─────────────────────────────────────────
+*.bak
+*.bak.*
+Backups/
+
+# ── Test / working map files ──────────────────────────────────────────────────
+3ds_source/*.v2m
+
+# ── devkitPro toolchain (huge — never commit) ─────────────────────────────────
+devkitPro/
+
+# ── Internal project folders ──────────────────────────────────────────────────
+Plan/
+media/
+Ready/
+
+# ── Internal scripts ──────────────────────────────────────────────────────────
+backup.bat
+build.bat
+
+# ── Companion app — source stays private, only exe is public ─────────────────
+companion_app/*.cs
+companion_app/*.cpp
+companion_app/*.bat
+companion_app/README.md
+
+# ── Old/alternative emulator binaries ────────────────────────────────────────
+virtuanes_3ds/
+
+# ── Windows junk ─────────────────────────────────────────────────────────────
+*.lnk
+Thumbs.db
+Desktop.ini
+
+# ── AI / editor agent folders ────────────────────────────────────────────────
+.agents/
