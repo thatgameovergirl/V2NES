@@ -116,4 +116,4 @@ V2NES is licensed under the [GNU General Public License v2.0](LICENSE) or (at yo
 
 ## Support
 
-For bug reports or questions, open an issue on the repository. For setup help, see the [Companion App README](companion_app/README.md).
+For bug reports or questions, open an issue on the repository or email me. 
