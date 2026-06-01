@@ -30,6 +30,13 @@ All notable changes to the **V2NES 3DS Emulator** and its **Desktop Asset Compan
 * **Makefile Toolchain Paths Made Relocatable**: corrected the hardcoded `/c/V2NES/devkitPro` paths (DEVKITPRO override, `tex3ds.exe` invocation) and `build.bat` to the actual project location, so the project builds from `C:\Projects\V2NES`.
 * New glow PNGs added to `DATA_OBJS` with `bin2s` embed rules.
 
+### Companion App v1.5.0 (bumped from v1.4.0)
+* **Renamed Calibration Action**: the main-form button "CALIBRATE PLAYER MARKER" is now "CREATE OVERWORLD MAP NAVIGATION MARKER", and the dialog title became "Create Overworld Map Navigation Marker". Wording change only — same workflow, same `.pos` output — clarifies that the sidecar exists purely for overworld map navigation, not for arbitrary in-game markers.
+* **Output Folder Field**: the main form now has an "OUTPUT FOLDER" text box (with browse button) just below the staged files list. When set, all `.v2m` map conversions and `.txt` guide copies are written there instead of into the ROM's source directory. The folder is also passed to the Overworld Marker dialog as the default output for the `.pos` file. Leaving the field blank keeps the legacy behaviour (write next to the dropped ROM). `GetOutputDir()` helper centralises the choice so future export sites pick it up automatically.
+* **Output Scale Restricted to 75% / 50% / 33%**: the 100% option was removed because real-world overworld images always need downscaling to fit 3DS VRAM — keeping it as a choice routinely produced broken builds. The combo now defaults to 75% and the case mapping in `GetSelectedScale()` was renumbered (0=75, 1=50, 2=33).
+* **RESET Button**: a new "RESET (clear staged files)" button below the marker action clears the staged-file list, the detected ROM name/path, and the output folder so a fresh batch can be queued without quitting and relaunching the app. The log is preserved.
+* **Form Resized**: window grew from 740 → 790 px tall to accommodate the new output-folder row and reset button.
+
 ---
 
 ## [1.8.5] - 2026-05-23
