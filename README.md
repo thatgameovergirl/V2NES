@@ -12,6 +12,15 @@ Play NES games on the top screen while viewing game maps and walkthrough guides 
 - **Map caching** — preloads maps for instant switching, with VRAM-aware eviction
 - **Folder-organized browser** — maps, walkthroughs, and ROMs organized by game prefix
 
+## Platform Compatibility
+
+| Platform | Status |
+|----------|--------|
+| Old 3DS / 3DS XL | Tested and working |
+| New 3DS / New 3DS XL | Untested but should work
+| 2DS / New 2DS XL | Untested but should work
+| DS / DSi / DS Lite | Unsupported (requires 3DS hardware) |
+
 ## SD Card Setup
 
 Create these folders on your 3DS SD card:
@@ -87,6 +96,7 @@ Output: `3ds_source/V2NES.3dsx`
 
 ### V2NES
 - **HristValkyrja** (thatgameovergirl@gmail.com) — author of V2NES, companion app, map system, walkthrough system, and UI
+- **V2NES UI and tooling** developed with AI assistance
 
 ## License
 
