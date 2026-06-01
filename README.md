@@ -4,7 +4,7 @@
 
 Play NES games on the top screen while viewing game maps and walkthrough guides on the bottom screen — all with touch controls, auto-map switching, and player-position tracking.
 
-> **Disclaimer:** V2NES does not support piracy. You must dump your own legally purchased NES cartridges to use this emulator. No copyrighted ROMs, maps, or game assets are included in this repository.
+ **Disclaimer** V2NES does not support piracy. You must dump your own legally purchased NES cartridges to use this emulator. No copyrighted ROMs, maps, or game assets are included in this repository. V2NES is an independent project and is not affiliated with, nor authorized by, Nintendo.
 
 ## Features
 
@@ -43,7 +43,7 @@ sdmc:/3ds/V2NES/roms/         → .nes ROM files
 
 You can also place files in `sdmc:/V2NES/maps/`, `sdmc:/V2NES/walkthroughs/`, and `sdmc:/V2NES/roms/`.
 
-Maps in `.v2m` format are not included in this repository. Use the [companion app](#companion-app) to convert your own images, or download ready-to-use PNG maps from sites like [NESMaps.com](https://nesmaps.com/maps/Zelda/Zelda.html)
+Maps in `.v2m` format are not included in this repository. Use the [companion app](#companion-app) to convert your own images, or download ready-to-use PNG maps from sites like [NESMaps.com](https://nesmaps.com)
 
 ## Controls
 
