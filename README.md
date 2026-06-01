@@ -1,5 +1,10 @@
 # V2NES
+
+**Dual-Screen NES Emulator for Nintendo 3DS**
+
 Play NES games on the top screen while viewing game maps and walkthrough guides on the bottom screen — all with touch controls, auto-map switching, and player-position tracking.
+
+> **Disclaimer:** V2NES does not support piracy. You must dump your own legally purchased NES cartridges to use this emulator. No copyrighted ROMs, maps, or game assets are included in this repository.
 
 ## Features
 
@@ -17,9 +22,14 @@ Play NES games on the top screen while viewing game maps and walkthrough guides 
 | Platform | Status |
 |----------|--------|
 | Old 3DS / 3DS XL | Tested and working |
-| New 3DS / New 3DS XL | Untested but should work
-| 2DS / New 2DS XL | Untested but should work
+| New 3DS / New 3DS XL | Untested but should work |
+| 2DS / New 2DS XL | Untested but should work |
 | DS / DSi / DS Lite | Unsupported (requires 3DS hardware) |
+
+## Installation
+
+1. Copy `V2NES.3dsx` to `sdmc:/3ds/` on your SD card
+2. Launch via the Homebrew Launcher
 
 ## SD Card Setup
 
@@ -32,6 +42,8 @@ sdmc:/3ds/V2NES/roms/         → .nes ROM files
 ```
 
 You can also place files in `sdmc:/V2NES/maps/`, `sdmc:/V2NES/walkthroughs/`, and `sdmc:/V2NES/roms/`.
+
+Maps in `.v2m` format are not included in this repository. Use the [companion app](#companion-app) to convert your own images, or download ready-to-use PNG maps from sites like [NESMaps.com](https://nesmaps.com/maps/Zelda/Zelda.html)
 
 ## Controls
 
@@ -96,7 +108,6 @@ Output: `3ds_source/V2NES.3dsx`
 
 ### V2NES
 - **HristValkyrja** (thatgameovergirl@gmail.com) — author of V2NES, companion app, map system, walkthrough system, and UI
-- **V2NES UI and tooling** developed with AI assistance
 
 ## License
 
