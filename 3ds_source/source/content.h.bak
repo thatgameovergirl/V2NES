@@ -1,0 +1,55 @@
+#pragma once
+#include <3ds.h>
+#include <citro2d.h>
+#include <string>
+#include <vector>
+
+struct V2File {
+    std::string name;
+    std::string path;
+};
+
+class V2Content {
+public:
+    V2Content();
+    ~V2Content();
+
+    void scanFiles();
+    
+    std::vector<V2File> mapFiles;
+    std::vector<V2File> walkFiles;
+    std::vector<V2File> romFiles;
+
+    // Map Viewing
+    bool loadMap(const char* path);
+    void freeMap();
+    void drawMap();
+    void zoomIn(float factor = 1.25f);
+    void zoomOut(float factor = 1.25f);
+    void pan(float dx, float dy);
+    void resetView();
+
+    // Walkthrough Viewing
+    bool loadWalk(const char* path);
+    void freeWalk();
+    void drawWalk(int scrollY);
+    int getWalkHeight();
+
+private:
+    // Texture for the map
+    C3D_Tex mapTex;
+    C2D_Image mapImage;
+    Tex3DS_SubTexture mapSubTex;
+    bool mapLoaded = false;
+    
+    // Zoom and Pan state
+    float zoom = 1.0f;
+    float panX = 0.0f;
+    float panY = -40.0f;
+
+    // Walkthrough line storage
+    std::vector<std::string> walkLines;
+    std::vector<int> walkLineYOffsets;
+    int walkTotalHeight = 0;
+    bool walkLoaded = false;
+};

@@ -1,0 +1,121 @@
+ Main Menu Bottom Screen Layout
+Here's a clean, touch-friendly layout for the 400x240 bottom screen:
+
+text
+┌──────────────────────────────────┐
+│                                  │
+│    ┌────────────────────────┐    │
+│    │        PLAY            │    │  ← Large, prominent
+│    │   (resume last game)   │    │
+│    └────────────────────────┘    │
+│                                  │
+│  ┌────────────┐  ┌────────────┐  │
+│  │   MAPS     │  │WALKTHROUGHS│  │
+│  └────────────┘  └────────────┘  │
+│                                  │
+│  ┌────────────┐  ┌────────────┐  │
+│  │  SETTINGS  │  │ GAME LIST  │  │
+│  └────────────┘  └────────────┘  │
+│                                  │
+│  [🔋 86%]          V2NES v1.0    │
+└──────────────────────────────────┘
+🎮 The Three Control Layouts
+Since NES has A, B, Start, Select, and D-pad (plus no official L/R), here are layouts that map naturally to the 3DS:
+
+Layout	Name	Mapping	Best For
+Layout 1	Classic	B→B, A→A, Select→Select, Start→Start	Purists
+Layout 2	Modern	B→Y, A→B, Select→Select, Start→Start	Muscle memory from modern games
+Layout 3	One-Handed	B→L, A→R, Select→Select, Start→Start	Accessibility / commuter play
+The Settings screen becomes dead simple:
+
+Three large buttons showing the layout names
+
+Tap one to select (saved to SD card immediately)
+
+Back button returns to main menu
+
+🕹️ In-Game Bottom Screen Behavior
+During gameplay, the bottom screen is your content canvas. This is where your maps and walkthroughs shine.
+
+Default State (no content loaded):
+
+Just your maps/walkthroughs interface
+
+Small touch areas to switch between map/view
+
+When Maps is selected:
+
+Full bottom screen shows the converted map image
+
+Touch gestures: pinch to zoom? (maybe v2)
+
+Small "X" in corner to close
+
+When Walkthrough is selected:
+
+Scrollable text area
+
+Uses the 3DS's built-in scrolling with touch
+
+Text is your pre-converted TXT files
+
+Control Overlays (hidden by default):
+
+Quick save: L button (instant, no confirmation)
+
+Quick load: R button (maybe hold for 1 second to prevent accidents)
+
+Or make L+R combo do something else
+
+🔋 Battery & Performance Considerations
+You mentioned the emulator comes optimized - here's what that means in practice:
+
+Fixed Settings to Hardcode:
+
+Category	Setting	Value
+Video	Renderer	Hardware accelerated (GPU)
+Video	Scaling	1:1 integer scale, centered
+Video	Filters	None (sharp pixels)
+Audio	Sample rate	32040 Hz
+Audio	Latency	Low (2 frames)
+Framerate	Target	60/60.09 FPS (NES timing)
+Input	Deadzone	None (digital D-pad)
+Saving	Save slots	2 (L = quick save, R = quick load)
+About that battery indicator:
+
+Poll the 3DS's battery API every 5 seconds (minimal CPU cost)
+
+Display as icon + percentage
+
+Change color at 20% (yellow) and 10% (red)
+
+No popups or warnings - just the indicator
+
+📂 Memory Map (Approximate)
+With your approach, here's roughly how RAM would be used:
+
+Component	RAM Usage
+NES Emulation Core	8-16 KB
+Current ROM (cached)	~40 KB (average NES ROM)
+Current Map Image (BMP)	~150 KB (320x240@4bpp)
+Walkthrough Text (active)	~10 KB
+UI Elements (pre-rendered)	~20 KB
+System / Stack	~30 KB
+Total	~266 KB
+The Old 3DS has 128 MB total. You have plenty of room. The challenge isn't RAM - it's keeping everything snappy and responsive while emulating at full speed.
+
+✨ One Suggestion: Quick State Notifications
+Since L and R perform quick save/load with no confirmation, add a small visual indicator:
+
+On quick save: "💾 Saved" appears on bottom screen for 1 second
+
+On quick load: "📀 Loaded" appears for 1 second
+
+Use the 3DS's notification system or just draw text directly
+
+This prevents confusion without menus.
+
+📝 Final Verdict
+Your design is solid. You've kept Settings minimal, used L/R for savestates (perfect since NES doesn't use them), and saved the bottom screen for your core content feature. Battery indicator is essential for portable play.
+
+Build this exactly as you've described. It's focused, usable, and respects both the hardware and the user.
