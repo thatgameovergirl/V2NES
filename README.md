@@ -108,7 +108,12 @@ Output: `3ds_source/V2NES.3dsx`
 
 ### V2NES
 - **HristValkyrja** (thatgameovergirl@gmail.com) — author of V2NES, companion app, map system, walkthrough system, and UI
+- V2NES UI and tooling developed with AI assistance
 
 ## License
 
 V2NES is licensed under the [GNU General Public License v2.0](LICENSE) or (at your option) any later version. This license is required by the FCEUX-derived mapper code included in the emulator core.
+
+## Support
+
+For bug reports or questions, open an issue on the repository. For setup help, see the [Companion App README](companion_app/README.md).
