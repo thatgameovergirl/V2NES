@@ -1,5 +1,6 @@
 # V2NES
-V2NES is a 3DS NES emulator that shows game maps &amp; walkthroughs on the bottom screen while you play. Features 180+ mapper support, touch controls, auto-map switching via RAM detection, savestates, and a Windows companion to convert PNG images to its custom tiled map format.
+Play NES games on the top screen while viewing game maps and walkthrough guides on the bottom screen — all with touch controls, auto-map switching, and player-position tracking.
+
 ## Features
 
 - **Full NES emulation** — 180+ mappers, NDSP audio, CPU/PPU/APU, savestates (3 slots)
