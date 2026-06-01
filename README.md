@@ -43,12 +43,13 @@ sdmc:/3ds/V2NES/roms/         → .nes ROM files
 
 You can also place files in `sdmc:/V2NES/maps/`, `sdmc:/V2NES/walkthroughs/`, and `sdmc:/V2NES/roms/`.
 
-Maps in `.v2m` format are not included in this repository. Use the [companion app](#companion-app) to convert your own images, or download ready-to-use PNG maps from sites like [NESMaps.com](https://nesmaps.com/maps/Zelda/Zelda.html)
+Maps in `.v2m` format are not included in this repository. Use the [companion app](#companion-app) to convert your own images, or download ready-to-use PNG maps from sites like [NESMaps.com](https://nesmaps.com)
 
 ## Controls
 
 | Button | Action |
 |--------|--------|
+| L + R | Switch between top screen (game) and bottom screen (map/guide) |
 | Y / X | Zoom map in / out |
 | D-pad | Pan map / scroll guide |
 | L + Y / L + X | Load / save state |
@@ -113,7 +114,7 @@ Output: `3ds_source/V2NES.3dsx`
 
 ## License
 
-V2NES is licensed under the [GNU General Public License v2.0](LICENSE) or (at your option) any later version. This license is required by the FCEUX-derived mapper code included in the emulator core.
+V2NES is licensed under the [GNU General Public License v2.0](LICENSE).
 
 ## Support
 
