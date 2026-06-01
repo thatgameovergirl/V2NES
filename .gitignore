@@ -26,11 +26,10 @@ Ready/
 backup.bat
 build.bat
 
-# ── Companion app — source stays private, only exe is public ─────────────────
+# ── Companion app — source stays private, only exe + README are public ───────
 companion_app/*.cs
 companion_app/*.cpp
 companion_app/*.bat
-companion_app/README.md
 
 # ── Old/alternative emulator binaries ────────────────────────────────────────
 virtuanes_3ds/
